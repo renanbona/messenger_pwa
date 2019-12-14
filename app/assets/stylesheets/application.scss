@@ -20,6 +20,16 @@
   }
 }
 
+.button.fab-button {
+  position: fixed;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  bottom: 30px;
+  right: 30px;
+}
+
 div.columns.item-list {
   border-bottom: 1px dashed $white-ter;
 
