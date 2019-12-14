@@ -7,5 +7,9 @@ class ApplicationController < ActionController::Base
       :sign_up,
       keys: %i[name email password password_confirmation]
     )
+    devise_parameter_sanitizer.permit(
+      :account_update,
+      keys: %i[photo name email password password_confirmation]
+    )
   end
 end
